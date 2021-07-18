@@ -27,9 +27,9 @@ public class Cylinder : Shape
         this.Tallness = 100f;
     }
 
-    public override void DisplayInfo()
+    public override string GetDisplayInfo()
     {
-        Debug.Log($"I am a cylinder and my tallness is {this.Tallness}");
+        return $"I am a cylinder and my tallness is {this.Tallness}";
     }
 
     

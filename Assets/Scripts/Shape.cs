@@ -18,10 +18,11 @@ public abstract class Shape : MonoBehaviour
 
     void OnMouseDown()
     {
-        this.DisplayInfo();
+        var info = this.GetDisplayInfo();
+        UiManager.Instance.SetInfoText(info);
         this.ChangeColor();
     }
 
-    public abstract void DisplayInfo();
+    public abstract string GetDisplayInfo();
 
 }

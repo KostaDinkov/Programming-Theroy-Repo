@@ -27,8 +27,8 @@ public class Sphere : Shape
         this.Fatness = 200;
     }
 
-    public override void DisplayInfo()
+    public override string GetDisplayInfo()
     {
-        Debug.Log($"I am a sphere and my Fatness is {this.Fatness}");
+        return $"I am a sphere and my Fatness is {this.Fatness}";
     }
 }

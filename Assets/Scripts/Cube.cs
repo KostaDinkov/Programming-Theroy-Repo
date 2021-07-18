@@ -30,9 +30,9 @@ public class Cube : Shape
         }
     }
 
-    public override void DisplayInfo()
+    public override string GetDisplayInfo()
     {
-        Debug.Log($"I am a cube and my awesomeness is {this.AwesomenessLevel}");
+        return $"I am a cube and my awesomeness is {this.AwesomenessLevel}";
     }
 
     
